@@ -5,7 +5,7 @@ const Post = () => {
   const [data, setData] = useState([])
   console.log(new Date().toLocaleDateString())
   useEffect(() => {
-    fetch("http://localhost:5000/posts")
+    fetch("https://instaclone-ndex.onrender.com/posts")
       .then((res) => { return res.json() })
       .then((val) => {
         console.log(val)
@@ -40,7 +40,7 @@ const Post = () => {
           
             </div>
             <section>
-              <img className='postImage' src={`http://localhost:5000/posts/${val.PostImage}`} alt="" />
+              <img className='postImage' src={`https://instaclone-ndex.onrender.com/posts/${val.PostImage}`} alt="" />
             </section>
             <div>
               <h4 className='foot'>{val.description}</h4>
