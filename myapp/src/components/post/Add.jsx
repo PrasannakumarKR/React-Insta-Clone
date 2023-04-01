@@ -12,7 +12,7 @@ function Add(props) {
         let dataFromForm = Object.fromEntries(formData.entries());
         console.log(dataFromForm);
 
-        await fetch("http://localhost:5000/posts", {
+        await fetch("https://instaclone-ndex.onrender.com/posts", {
             method: "post",
             body: formData,
             redirect: "follow"
